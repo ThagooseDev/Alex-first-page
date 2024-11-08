@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Mi Página Musical</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #101010;
+            color: #fff;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        /* Estilo del encabezado */
+        header {
+            background-color: #1e1e1e;
+            color: #ffeb3b;
+            padding: 20px 0;
+            width: 100%;
+        }
+
+        h1 {
+            margin: 0;
+            color: #ffeb3b;
+            font-size: 36px;
+        }
+
+        /* Estilos del menú */
+        nav {
+            background-color: #333;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 25px;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ffeb3b;
+            color: #333;
+        }
+
+        /* Estilo para las imágenes de las canciones */
+        .songs-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .song {
+            position: relative;
+            max-width: 100%;
+        }
+
+        .song img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .song img:hover {
+            transform: scale(1.05);
+        }
+
+        .song h3 {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Mi Página Musical</h1>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <a href="inicio.html">INICIO</a>
+        <a href="contacto.html">CONTACTO</a>
+        <a href="logo.html">LOGO</a>
+        <a href="quienes-somos.html">QUIENES SOMOS</a>
+        <a href="servicios.html">SERVICIOS</a>
+        <a href="menu.html">MENU</a>
+    </nav>
+
+    <!-- Galería de canciones con imágenes de álbumes -->
+    <section class="songs-gallery">
+        <div class="song">
+            <a href="https://www.youtube.com/watch?v=fJ9rUzIMcZQ" target="_blank">
+                <img src="https://th.bing.com/th/id/OIP.HhZnFWbkDLEDj_vxGeEVGAHaKU?rs=1&pid=ImgDetMain" alt="Bohemian Rhapsody - Queen">
+                <h3>Bohemian Rhapsody - Queen</h3>
+            </a>
+        </div>
+        <div class="song">
+            <a href="https://www.youtube.com/watch?v=hTWKbfoikeg" target="_blank">
+                <img src="https://th.bing.com/th/id/OIP.6s_YzCYAlweGOvYpEH-YkQAAAA?rs=1&pid=ImgDetMain" alt="Smells Like Teen Spirit - Nirvana">
+                <h3>Smells Like Teen Spirit - Nirvana</h3>
+            </a>
+        </div>
+        <div class="song">
+            <a href="https://www.youtube.com/watch?v=CD-E-LDc384" target="_blank">
+                <img src="https://i1.sndcdn.com/artworks-000258189284-6xuusb-t500x500.jpg" alt="Enter Sandman - Metallica">
+                <h3>Enter Sandman - Metallica</h3>
+            </a>
+        </div>
+        <div class="song">
+            <a href="https://www.youtube.com/watch?v=rinkviEmeXk" target="_blank">
+                <img src="https://th.bing.com/th/id/R.e6e3521b4b82eb0f052ccb07635e0d06?rik=zbOcHiE7hQ6QrA&riu=http%3a%2f%2fimages5.fanpop.com%2fimage%2fphotos%2f31700000%2fMUSE-muse-31743945-1280-1024.jpg&ehk=u75hbO3YoKdqlGWaZXQBIoXiUQFLlFtk%2fwCGLbahsnc%3d&risl=&pid=ImgRaw&r=0" alt="Supermassive Black Hole - Muse">
+                <h3>Supermassive Black Hole - Muse</h3>
+            </a>
+        </div>
+        <div class="song">
+            <a href="https://www.youtube.com/watch?v=IBPB0LP_Ulo" target="_blank">
+                <img src="https://th.bing.com/th/id/OIP.N7ujn18qh5n5XSj22C308gHaHa?rs=1&pid=ImgDetMain" alt="Toxicity - System of a Down">
+                <h3>Toxicity - System of a Down</h3>
+            </a>
+        </div>
+        <div class="song">
+            <a href="https://www.youtube.com/watch?v=O4irXQhgMqg" target="_blank">
+                <img src="https://i.ytimg.com/vi/O4irXQhgMqg/maxresdefault.jpg" alt="Paint It Black - The Rolling Stones">
+                <h3>Paint It Black - The Rolling Stones</h3>
+            </a>
+        </div>
+        <div class="song">
+            <a href="https://www.youtube.com/watch?v=3GWwohI5h1w" target="_blank">
+                <img src="https://th.bing.com/th/id/OIP.avst07ZuoGnCq65c6FYp1AHaHa?rs=1&pid=ImgDetMain" alt="Duality - Slipknot">
+                <h3>Duality - Slipknot</h3>
+            </a>
+        </div>
+        <div class="song">
+            <a href="https://www.youtube.com/watch?v=2k1ZpPp6lJ4" target="_blank">
+                <img src="https://i.ytimg.com/vi/AxuTd9rwEHQ/maxresdefault.jpg" alt="Everlong - Foo Fighters">
+                <h3>Everlong - Foo Fighters</h3>
+            </a>
+        </div>
+        <div class="song">
+            <a href="https://www.youtube.com/watch?v=XFkzRNyygfk" target="_blank">
+                <img src="https://th.bing.com/th/id/OIP.BqzEYAzt-qLkXxPNKYcwywHaHa?rs=1&pid=ImgDetMain" alt="Creep - Radiohead">
+                <h3>Creep - Radiohead</h3>
+            </a>
+        </div>
+        <div class="song">
+            <a href="https://www.youtube.com/watch?v=bpOSxM0rNPM" target="_blank">
+                <img src="https://i.ytimg.com/vi/AHT_Dtajwwc/maxresdefault.jpg" alt="Do I Wanna Know - Arctic Monkeys">
+                <h3>Do I Wanna Know - Arctic Monkeys</h3>
+            </a>
+        </div>
+    </section>
+
+</body>
+</html>
